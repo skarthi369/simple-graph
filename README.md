@@ -42,9 +42,9 @@ graph TB
     end
     
     subgraph "User Nodes"
-        N1[Node A<br/>async def]
-        N2[Node B<br/>def]
-        N3[Node C<br/>async def]
+        N1["Node A (async def)"]
+        N2["Node B (def)"]
+        N3["Node C (async def)"]
     end
     
     subgraph "External Resources"
@@ -122,15 +122,15 @@ SimpleGraph uses a sophisticated three-tier routing system:
 
 ```mermaid
 flowchart TD
-    START([Node Execution Complete]) --> CHECK1{Updates contain<br/>__next__ key?}
+    START([Node Execution Complete]) --> CHECK1{"Updates contain __next__ key?"}
     
-    CHECK1 -->|Yes| PRIORITY1[🔴 HIGHEST PRIORITY<br/>Use __next__ value]
-    CHECK1 -->|No| CHECK2{Dynamic router<br/>registered?}
+    CHECK1 -->|Yes| PRIORITY1["🔴 HIGHEST PRIORITY<br/>Use __next__ value"]
+    CHECK1 -->|No| CHECK2{"Dynamic router registered?"}
     
-    CHECK2 -->|Yes| PRIORITY2[🟡 MEDIUM PRIORITY<br/>Call router function]
-    CHECK2 -->|No| CHECK3{Static edge<br/>exists?}
+    CHECK2 -->|Yes| PRIORITY2["🟡 MEDIUM PRIORITY<br/>Call router function"]
+    CHECK2 -->|No| CHECK3{"Static edge exists?"}
     
-    CHECK3 -->|Yes| PRIORITY3[🟢 LOWEST PRIORITY<br/>Follow static edge]
+    CHECK3 -->|Yes| PRIORITY3["🟢 LOWEST PRIORITY<br/>Follow static edge"]
     CHECK3 -->|No| END([Execution Complete])
     
     PRIORITY1 --> NEXT[Execute Next Node]
