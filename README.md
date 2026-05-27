@@ -224,8 +224,8 @@ Automatic detection and handling of sync/async node functions with thread pool o
 ```mermaid
 flowchart TD
     NODE[Node Function] --> INSPECT{Inspect Signature}
-    INSPECT -->|async def| ASYNC[Async Execution<br/>await node(state)]
-    INSPECT -->|def| SYNC[Sync Execution<br/>asyncio.to_thread(node, state)]
+    INSPECT -->|async def| ASYNC["Async Execution<br/>await node(state)"]
+    INSPECT -->|def| SYNC["Sync Execution<br/>asyncio.to_thread(node, state)"]
     
     ASYNC --> MERGE[Merge Results on Main Thread]
     SYNC --> MERGE
