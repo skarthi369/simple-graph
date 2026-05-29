@@ -642,6 +642,3 @@ When deciding which node to transition to next, the orchestrator follows this ex
 
 ---
 
-## License
-
-This project is licensed under the MIT License.
