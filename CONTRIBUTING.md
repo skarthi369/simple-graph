@@ -105,9 +105,6 @@ The core team looks at Pull Requests on a regular basis. After feedback has been
 - Focus on constructive feedback
 - Celebrate contributions from everyone
 
-## License
-
-By contributing, you agree that your contributions will be licensed under the MIT License.
 
 ## Questions?
 
