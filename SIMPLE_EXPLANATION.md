@@ -1,10 +1,10 @@
-# SimpleGraph - Simple Explanation 🤖
+# SimpleGraph - Simple Explanation 
 
 ## What is SimpleGraph? (In Simple Terms)
 
 Think of SimpleGraph like a **smart traffic controller** for your code. Just like how a traffic controller manages cars moving through intersections, SimpleGraph manages different pieces of your program (called "agents" or "nodes") working together.
 
-### Real-World Analogy 🚗
+### Real-World Analogy 
 
 Imagine you're running a restaurant:
 - **Chef** (Node 1): Cooks the food
@@ -119,7 +119,7 @@ graph.add_conditional_edges("take_order", smart_decision)
 
 **Think of it like:** The restaurant manager deciding "If payment is done, tell the chef to start cooking. If not, ask for payment first."
 
-## Real Use Cases 🌟
+## Real Use Cases 
 
 ### 1. Customer Service Bot
 ```python
@@ -263,7 +263,7 @@ checkpoint = load_checkpoint()
 final_result = graph.resume(checkpoint)
 ```
 
-## Debugging Made Easy 🔍
+## Debugging Made Easy 
 
 SimpleGraph gives you a beautiful timeline of everything that happened:
 
@@ -291,7 +291,7 @@ SimpleGraph gives you a beautiful timeline of everything that happened:
 ================================================================================
 ```
 
-## Performance Benefits 🚀
+## Performance Benefits 
 
 ### Memory Efficient
 - Only copies what's needed
@@ -323,7 +323,7 @@ SimpleGraph gives you a beautiful timeline of everything that happened:
 - **Customer Service**: Understand → Route → Resolve → Follow-up
 - **Data Processing**: Extract → Transform → Validate → Load → Report
 
-## Getting Started (5 Minutes) ⚡
+## Getting Started (5 Minutes) 
 
 ```python
 # 1. Install
@@ -349,7 +349,7 @@ result = graph.run({"name": "World"})
 print(result["final"])  # "Hello World! Welcome to SimpleGraph!"
 ```
 
-## Summary: Why SimpleGraph Wins 🏆
+## Summary: Why SimpleGraph Wins 
 
 1. **Simple**: Just Python functions and dictionaries
 2. **Safe**: Built-in error handling and loop protection
